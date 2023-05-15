@@ -4,13 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
     <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
   <body>
-    <main>
-      {{ content }}
-    </main>
+    {{ content }}
     <script src="/assets/js/bootstrap.bundle.js"></script> <!-- TODO: move these to theader using defer or async -->
     <script src="/assets/js/main.js"></script>  
   </body>
