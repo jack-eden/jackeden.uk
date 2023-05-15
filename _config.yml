@@ -1,3 +1,9 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: "Jekyll & Bootstrap 5" # the name of your site, e.g. ACME Corp.
+
+# develop
+bootstrap-version: "5.2.3"
+jekyll-version: "4.3.2"
+liquid-version: "~> 4.0"
+ruby-version: "3.1.4"
