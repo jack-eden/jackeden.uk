@@ -1,17 +1,20 @@
 ---
-// Welcome to Astro! Everything between these triple-dash code fences
-// is your "component frontmatter". It never runs in the browser.
-console.log('This runs in your terminal, not the browser!');
+import Base from "../layouts/Base.astro"
+const pageTitle = 'Jack Eden';
 ---
-<!-- Below is your "component template." It's just HTML, but with
-     some magic sprinkled in to help you build great templates. -->
-<html>
-  <body>
-    <h1>Hello, World!</h1>
-  </body>
-</html>
-<style>
-  h1 {
-    color: orange;
-  }
-</style>
+<Base pageTitle={pageTitle}>
+  
+  <h1><a href="/">Jack Eden</a></h1>
+  <p>A personal blog documenting my thoughts as I start from square one learning about different topics.</p>
+
+  <h2>Posts:</h2>
+  <a href="posts/starting-small.html">Starting Small</a>
+
+  <h2>About me</h2>
+  <p>Educated as a graphic designer I have mostly spent my career in a series of day jobs ranging from tech support in 
+  an ISP call centre, to project management at a Russel Group university. Some of it has been creative work, but not a 
+  lot of it. I want to change that and this blog is a part of the strategy; it's been long enough since my education 
+  that a clean start is my preferred approach and this is where I'll be keeping my notes.</p>
+  <p>I'd also expect to see a lot of notes on table-top RPGs and D&D, and collected ephemera.</p>
+
+</Base>
