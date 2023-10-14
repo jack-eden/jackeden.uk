@@ -1,0 +1,24 @@
+- frontend
+  - learning HTML, CSS, Javascript
+  - Tailwindcss postprocessing set-up
+  - Alpine js bundling
+
+- backend
+  - how do I get Astro js working?
+    - is there something simpler I can use?
+  - how do I intergrate tailwind and alpine?
+  - how do I deploy to cloudflare?
+    - upload?
+    - build?
+    - edge networks for interactivity?
+    - domain and DNS?
+      - Documentation: https://developers.cloudflare.com/pages/platform/custom-domains/
+
+- content
+  - ADHD&D
+  - TTRPG 
+  - Learning to code
+  - Politics
+  - ADHD
+  - Videogame development
+  - portfolio
