@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Test</title>
+    <link href="revert.css" rel="stylesheet">
+    <!--<link href="styles.css" rel="stylesheet">-->
+    <style>
+        :root {
+            --coloursWhite: hsl(0, 0%, 100%);
+            --coloursBeige: hsl(60, 56%, 91%);
+            --coloursOlive: hsl(60,55.7%,25.7%);
+            --coloursCanary: hsl(60,56.1%,75.9%);
+            --coloursNavy: hsl(240,55.7%,25.7%);
+
+            --spacerUnit: 2rem;
+
+            --headerPadding: calc(var(--spacerUnit) * 0.5);
+            --headerBaseW: 15ch;
+            --headerBaseH: 15ch;
+            --headerMaxW: calc(100vw - (var(--spacerUnit) * 2)); 
+            --headerMaxH: calc(100vh - (var(--spacerUnit) * 2));
+            --headerClearW: calc(var(--headerBaseW) + (var(--spacerUnit) * 2) + var(--spacerUnit));
+            --headerClearH: calc(var(--headerBaseH) + (var(--spacerUnit) * 2) + var(--spacerUnit));
+            --headerAlign: calc(var(--headerPadding) + var(--spacerUnit) - 16px);
+
+            --coloursBase: var(--coloursWhite);
+            --coloursHighlightTint: var(--coloursCanary);
+            --coloursHighlight: var(--coloursBeige);
+            --coloursHighlightShade: var(--coloursOlive);
+            --coloursSplash: var(--coloursNavy);
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+        #contentFrame {
+            width: 100vw;
+            height: 100vh;
+            padding-right: calc(var(--spacerUnit) * 2);
+            background-color: var(--coloursBase);
+            overflow: auto;
+        }
+        #headerFrame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            background-color: hsla(0, 0%, 100%, 0);
+        }
+        .headerClearW {
+            padding-left: var(--headerClearW);
+        }
+        aside {
+            margin: var(--spacerUnit);
+            width: var(--headerBaseW);
+            height: var(--headerBaseH);
+
+            transition: all .2s ease-out;
+
+            background-color: var(--coloursHighlight);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: var(--headerBaseW), clamp(25ch, 75ch, 90ch), 1fr;
+            gap: var(--spacerUnit);
+        }
+        main {
+            max-width: 90ch;
+        }
+        h1 {
+            margin-bottom: calc(var(--spacerUnit) * 0.5)
+        }
+
+        p {
+            margin-bottom: calc(var(--spacerUnit) * 0.25);
+        }
+    </style>
+    <script defer type="text/javascript" src="scripts.js"></script>
+</head>
+<body id="root">
+    <section>
+        <div id="headerFrame">
+            <aside>
+                <ul>
+                    <li>Jack Eden</li>
+                    <li>About</li>
+                    <li>Blog</li>
+                </ul>
+            </aside>
+        </div>
+        <div id="contentFrame">
+            <main class="headerClearW">
+                <h1>About Me</h1>
+                <p>Educated as a graphic designer I have mostly spent my career in a series of day jobs ranging from tech support in an ISP call centre, to project management at a Russel Group university. Some of it has been creative work, but not a lot of it. I want to change that and this blog is a part of the strategy; it's been long enough since my education that a clean start is my preferred approach and this is where I'll be keeping my notes.</p>
+                <p>I'd also expect to see a lot of notes on table-top RPGs and D&D, and collected ephemera.</p>
+                <h1>Posts:</h1>
+                <ul>
+                    <li>Starting Small</li>
+                </ul>
+            </main>
+        </div>
+    </section>
+</body>
+</html>
